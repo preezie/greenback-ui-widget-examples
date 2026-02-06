@@ -50,7 +50,7 @@ export const usePreezieAIPDPWidget = () => {
     // Configuration
     const tenantId = "YOUR_TENANT_ID"; 
     const targetSelector = '[data-testid="InfoSection"]'; // CSS selector for the element to insert the widget before or after
-    const position = "before";
+    const position: string = "before"; 
     const scriptSrc = "https://widget.shopassistant-ai.com/preguide_ai.js";
 
     const targetElement = document.querySelector(targetSelector);
